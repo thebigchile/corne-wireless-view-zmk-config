@@ -136,10 +136,10 @@
 
         lower_layer {
             bindings = <
-&none  &kp LG(LS(S))  &kp PAGE_DOWN  &kp UP         &kp PAGE_UP     &kp C_VOLUME_UP    &kp N7  &kp N8  &kp N9     &kp KP_MINUS   &kp C_AL_CALCULATOR  &none
-&none  &none          &kp LEFT       &kp DOWN       &kp RIGHT       &kp C_VOL_DN       &kp N4  &kp N5  &kp N6     &kp PLUS       &kp KP_MULTIPLY      &none
-&none  &none          &kp C_AC_CUT   &kp C_AC_COPY  &kp C_AC_PASTE  &tap_d_playnext    &kp N1  &kp N2  &kp N3     &kp KP_DIVIDE  &none                &none
-                                     &kp ESCAPE     &none           &mo 2              &mo 3   &kp N0  &kp ENTER
+&none  &kp LG(LS(S))  &kp PAGE_DOWN  &kp UP      &kp PAGE_UP  &kp C_VOLUME_UP    &kp N7  &kp N8  &kp N9     &kp KP_MINUS   &kp C_AL_CALCULATOR  &none
+&none  &none          &kp LEFT       &kp DOWN    &kp RIGHT    &kp C_VOL_DN       &kp N4  &kp N5  &kp N6     &kp PLUS       &kp KP_MULTIPLY      &none
+&none  &none          &kp LC(X)      &kp LC(C)   &kp LC(V)    &tap_d_playnext    &kp N1  &kp N2  &kp N3     &kp KP_DIVIDE  &none                &none
+                                     &kp ESCAPE  &none        &mo 2              &mo 3   &kp N0  &kp ENTER
             >;
 
             label = "Lower";
