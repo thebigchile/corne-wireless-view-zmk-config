@@ -62,7 +62,7 @@
         };
 
         F+J {
-            bindings = <&caps_word>;
+            bindings = <&caps_wrd>;
             key-positions = <16 19>;
         };
 
