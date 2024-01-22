@@ -53,7 +53,8 @@
 
         layer {
             bindings = <&tog 1>;
-            key-positions = <38 39 32 33>;
+            key-positions = <38 39 31 34>;
+            layers = <1 0>;
         };
 
         cap_wrd {
