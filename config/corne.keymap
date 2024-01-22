@@ -73,12 +73,12 @@
 
         L_parenthesis {
             bindings = <&kp LEFT_PARENTHESIS>;
-            key-positions = <16 17>;
+            key-positions = <12 13>;
         };
 
         R_Parenthesis {
             bindings = <&kp RIGHT_PARENTHESIS>;
-            key-positions = <13 12>;
+            key-positions = <16 17>;
         };
 
         backslash {
@@ -104,12 +104,12 @@
 
         L_Brace {
             bindings = <&kp LEFT_BRACE>;
-            key-positions = <27 26>;
+            key-positions = <23 22>;
         };
 
         R_Brace {
             bindings = <&kp RIGHT_BRACE>;
-            key-positions = <23 22>;
+            key-positions = <26 27>;
         };
     };
 
