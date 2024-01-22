@@ -110,6 +110,7 @@
         mac_layer {
             bindings = <&tog 1>;
             key-positions = <32 33>;
+            layers = <1 0>;
         };
     };
 
