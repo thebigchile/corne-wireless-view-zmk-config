@@ -90,7 +90,7 @@
         };
 
         mute_combo {
-            bindings = <&kp K_MUTE>;
+            bindings = <&kp C_MUTE>;
             key-positions = <5 17>;
             layers = <2>;
         };
@@ -116,10 +116,10 @@
 
         Win {
             bindings = <
-&none  &kp Q                     &kp W                 &kp E                     &kp R                   &kp T    &kp Y  &kp U                    &kp I                      &kp O                  &kp P                              &none
-&none  &home_row LEFT_COMMAND A  &home_row LEFT_ALT S  &home_row LEFT_CONTROL D  &home_row LEFT_SHIFT F  &kp G    &kp H  &home_row RIGHT_SHIFT J  &home_row RIGHT_CONTROL K  &home_row RIGHT_ALT L  &home_row RIGHT_COMMAND SEMICOLON  &none
-&none  &kp Z                     &kp X                 &kp C                     &kp V                   &kp B    &kp N  &kp M                    &kp COMMA                  &kp DOT                &kp FSLH                           &none
-                                                       &kp TAB                   &kp BACKSPACE           &mo 2    &mo 3  &kp SPACE                &kp ENTER
+&none  &kp Q                     &kp W                 &kp E                     &kp R                   &kp T           &kp Y  &kp U                    &kp I                      &kp O                  &kp P                              &none
+&none  &home_row LEFT_COMMAND A  &home_row LEFT_ALT S  &home_row LEFT_CONTROL D  &home_row LEFT_SHIFT F  &kp G           &kp H  &home_row RIGHT_SHIFT J  &home_row RIGHT_CONTROL K  &home_row RIGHT_ALT L  &home_row RIGHT_COMMAND SEMICOLON  &none
+&none  &kp Z                     &kp X                 &kp C                     &kp V                   &kp B           &kp N  &kp M                    &kp COMMA                  &kp DOT                &kp FSLH                           &none
+                                                       &kp TAB                   &kp BACKSPACE           &lt 2 ESCAPE    &mo 3  &kp SPACE                &kp ENTER
             >;
 
             label = "Base";
