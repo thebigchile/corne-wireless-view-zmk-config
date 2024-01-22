@@ -39,6 +39,13 @@
             #binding-cells = <0>;
             bindings = <&kp K_PLAY_PAUSE>, <&kp K_NEXT>;
         };
+
+        caps_wrd: caps_wrd {
+            compatible = "zmk,behavior-caps-word";
+            label = "CAPS_WRD";
+            #binding-cells = <0>;
+            continue-list = <DOLLAR>;
+        };
     };
 
     combos {
