@@ -20,11 +20,6 @@
 #define SUPER LC(LSHIFT)
 #define SUPER2 LA(LC(LSHIFT))
 
-&mt {
-    tapping-term-ms = <200>;
-    flavor = "tap-preferred";
-};
-
 / {
     behaviors {
         home_row: home_row {
@@ -45,27 +40,60 @@
 
         accent {
             bindings = <&kp SQT>;
-            key-positions = <9 10>;
-        };
-
-        esc {
-            bindings = <&kp ESCAPE>;
-            key-positions = <1 2>;
+            key-positions = <8 7>;
         };
 
         layer {
             bindings = <&tog 1>;
             key-positions = <38 39>;
         };
-    };
 
-    macros {
+        F+J {
+            bindings = <&caps_word>;
+            key-positions = <16 19>;
+        };
+
+        left_bracket {
+            bindings = <&kp LEFT_BRACKET>;
+            key-positions = <14 15>;
+        };
+
+        right_bracket {
+            bindings = <&kp RIGHT_BRACKET>;
+            key-positions = <21 20>;
+        };
+
+        L_parenthesis {
+            bindings = <&kp LEFT_PARENTHESIS>;
+            key-positions = <15 16>;
+        };
+
+        R_Parenthesis {
+            bindings = <&kp RIGHT_PARENTHESIS>;
+            key-positions = <19 20>;
+        };
+
+        backslash {
+            bindings = <&kp BACKSLASH>;
+            key-positions = <31 32>;
+        };
+
+        Pipe {
+            bindings = <&kp PIPE>;
+            key-positions = <32 33>;
+        };
+
+        mute_combo {
+            bindings = <&kp K_MUTE>;
+            key-positions = <5 17>;
+            layers = <2>;
+        };
     };
 
     keymap {
         compatible = "zmk,keymap";
 
-        mac {
+        Win {
             bindings = <
 &none  &kp Q                     &kp W                 &kp E                     &kp R                   &kp T    &kp Y  &kp U                    &kp I                      &kp O                  &kp P                              &none
 &none  &home_row LEFT_COMMAND A  &home_row LEFT_ALT S  &home_row LEFT_CONTROL D  &home_row LEFT_SHIFT F  &kp G    &kp H  &home_row RIGHT_SHIFT J  &home_row RIGHT_CONTROL K  &home_row RIGHT_ALT L  &home_row RIGHT_COMMAND SEMICOLON  &none
@@ -76,10 +104,10 @@
             label = "Base";
         };
 
-        win {
+        Mac {
             bindings = <
 &trans  &kp Q                     &kp W                 &kp E                 &kp R                   &kp T    &kp Y  &kp U                    &kp I                  &kp O                  &kp P                      &trans
-&trans  &home_row LEFT_CONTROL A  &home_row LEFT_WIN S  &home_row LEFT_ALT D  &home_row LEFT_SHIFT F  &kp G    &kp H  &home_row RIGHT_SHIFT J  &home_row RIGHT_ALT K  &home_row RIGHT_WIN L  &home_row RCTRL SEMICOLON  &none
+&trans  &home_row LEFT_CONTROL A  &home_row LEFT_ALT S  &home_row LEFT_GUI D  &home_row LEFT_SHIFT F  &kp G    &kp H  &home_row RIGHT_SHIFT J  &home_row RIGHT_GUI K  &home_row RIGHT_ALT L  &home_row RCTRL SEMICOLON  &none
 &trans  &kp Z                     &kp X                 &kp C                 &kp V                   &kp B    &kp N  &kp M                    &kp COMMA              &kp DOT                &kp FSLH                   &trans
                                                         &kp TAB               &kp BSPC                &mo 2    &mo 3  &kp SPACE                &kp RET
             >;
@@ -87,10 +115,10 @@
 
         lower_layer {
             bindings = <
-&kp TAB     &kp N1      &kp N2  &kp N3          &kp UP_ARROW    &none        &kp N7  &kp N8  &kp N9    &none   &kp N0  &kp BSPC
-&bt BT_CLR  &none       &none   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT    &kp N4  &kp N5  &kp N6    &none   &trans  &trans
-&kp LSHFT   &bt BT_CLR  &trans  &trans          &trans          &none        &kp N1  &kp N2  &kp N3    &trans  &trans  &trans
-                                &kp LGUI        &bt BT_NXT      &mo 2        &mo 3   &kp N0  &kp RALT
+&none  &kp LG(LS(S))  &kp PAGE_DOWN  &kp UP      &kp PAGE_UP  &kp C_VOLUME_UP     &kp N7  &kp N8  &kp N9     &kp KP_MINUS   &kp K_CALC  &none
+&none  &none          &kp LEFT       &kp DOWN    &kp RIGHT    &kp C_VOL_DN        &kp N4  &kp N5  &kp N6     &kp PLUS       &none       &none
+&none  &none          &kp K_CUT      &kp K_COPY  &kp K_PASTE  &kp C_PLAY_PAUSE    &kp N1  &kp N2  &kp N3     &kp KP_DIVIDE  &none       &none
+                                     &kp LGUI    &bt BT_NXT   &mo 2               &mo 3   &kp N0  &kp ENTER
             >;
 
             label = "Lower";
@@ -98,10 +126,10 @@
 
         raise_layer {
             bindings = <
-&kp TAB    &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp BSPC
-&kp LCTRL  &trans    &trans  &trans    &trans    &trans       &kp MINUS  &kp EQUAL  &kp LBKT         &kp RBKT  &kp BSLH  &kp GRAVE
-&kp LSHFT  &trans    &trans  &trans    &trans    &trans       &kp UNDER  &kp PLUS   &kp LBRC         &kp RBRC  &kp PIPE  &kp TILDE
-                             &kp LGUI  &trans    &mo 2        &mo 3      &trans     &kp RALT
+&none  &kp EXCL   &kp AT        &kp HASH       &kp DLLR        &kp PRCNT    &none  &none  &none     &none  &none  &none
+&none  &kp MINUS  &kp PLUS      &kp EQUAL      &kp UNDERSCORE  &kp CARET    &none  &none  &none     &none  &none  &none
+&none  &none      &kp ASTERISK  &kp AMPERSAND  &none           &none        &none  &none  &none     &none  &none  &none
+                                &kp LGUI       &none           &mo 2        &mo 3  &none  &kp RALT
             >;
 
             label = "Raise";
