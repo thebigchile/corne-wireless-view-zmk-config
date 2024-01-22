@@ -136,7 +136,7 @@
                                               &kp TAB                   &kp BSPC                &lt 2 ESCAPE    &lt 3 DEL  &kp SPACE                &kp ENTER
             >;
 
-            label = "Base";
+            label = "Win";
         };
 
         Mac {
@@ -146,6 +146,8 @@
   &kp Z                     &kp X                 &kp C                 &kp V                   &kp B           &kp N      &kp M                    &kp COMMA              &kp DOT                &kp FSLH
                                                   &kp TAB               &kp BSPC                &lt 2 ESCAPE    &lt 3 DEL  &kp SPACE                &kp RET
             >;
+
+            label = "Mac";
         };
 
         lower_layer {
@@ -156,7 +158,7 @@
                     &kp ESC    &none      &lt 2 ESCAPE         &lt 3 DELETE  &kp N0  &kp RET
             >;
 
-            label = "Lower";
+            label = "Num";
         };
 
         raise_layer {
@@ -167,7 +169,7 @@
                                  &none          &none           &none          &none  &none  &none
             >;
 
-            label = "Raise";
+            label = "Sym";
         };
     };
 };
