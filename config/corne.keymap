@@ -20,6 +20,10 @@
 #define SUPER2 LA(LC(LSHIFT))
 
 / {
+    chosen {
+      zmk,matrix_transform = &five_column_transform;
+    };
+
     behaviors {
         home_row: home_row {
             compatible = "zmk,behavior-hold-tap";
