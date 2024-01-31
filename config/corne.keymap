@@ -50,8 +50,7 @@
             bindings = <&kp SQT>;
             key-positions = <8 7>;
             layers = <0 1>;
-            require-prior-idle-ms = <150>;
-            timeout-ms = <50>;
+            timeout-ms = <30>;
         };
 
         cap_wrd {
@@ -66,48 +65,42 @@
             bindings = <&kp LEFT_BRACKET>;
             key-positions = <3 2>;
             layers = <0 1>;
-            require-prior-idle-ms = <150>;
-            timeout-ms = <50>;
+            timeout-ms = <30>;
         };
 
         right_bracket {
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <7 6>;
             layers = <0 1>;
-            require-prior-idle-ms = <150>;
-            timeout-ms = <50>;
+            timeout-ms = <30>;
         };
 
         L_parenthesis {
             bindings = <&kp LEFT_PARENTHESIS>;
             key-positions = <12 13>;
             layers = <0 1>;
-            require-prior-idle-ms = <150>;
-            timeout-ms = <50>;
+            timeout-ms = <30>;
         };
 
         R_Parenthesis {
             bindings = <&kp RIGHT_PARENTHESIS>;
             key-positions = <16 17>;
             layers = <0 1>;
-            require-prior-idle-ms = <150>;
-            timeout-ms = <50>;
+            timeout-ms = <30>;
         };
 
         backslash {
             bindings = <&kp BACKSLASH>;
             key-positions = <27 28>;
             layers = <0 1>;
-            require-prior-idle-ms = <150>;
-            timeout-ms = <50>;
+            timeout-ms = <30>;
         };
 
         Pipe {
             bindings = <&kp PIPE>;
             key-positions = <17 18>;
             layers = <0 1>;
-            require-prior-idle-ms = <150>;
-            timeout-ms = <50>;
+            timeout-ms = <30>;
         };
 
         mute_combo {
@@ -120,24 +113,22 @@
             bindings = <&kp TILDE>;
             key-positions = <25 26>;
             layers = <0 1>;
-            require-prior-idle-ms = <150>;
-            timeout-ms = <50>;
+            timeout-ms = <30>;
         };
 
         L_Brace {
             bindings = <&kp LEFT_BRACE>;
             key-positions = <23 22>;
             layers = <0 1>;
-            require-prior-idle-ms = <150>;
-            timeout-ms = <50>;
+            timeout-ms = <30>;
         };
 
         R_Brace {
             bindings = <&kp RIGHT_BRACE>;
             key-positions = <26 27>;
             layers = <0 1>;
-            require-prior-idle-ms = <150>;
-            timeout-ms = <50>;
+            require-prior-idle-ms = <0>;
+            timeout-ms = <30>;
         };
 
         mac_layer {
