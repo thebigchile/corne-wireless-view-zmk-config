@@ -129,8 +129,13 @@
         };
 
         left_window {
-            bindings = <&kp LG(PAGE_DOWN)>;
+            bindings = <&kp LG(PAGE_UP)>;
             key-positions = <11 12 13>;
+        };
+
+        right {
+            bindings = <&kp LG(PAGE_DOWN)>;
+            key-positions = <16 17 18>;
         };
     };
 
