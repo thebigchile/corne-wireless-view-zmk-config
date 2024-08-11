@@ -127,6 +127,11 @@
             bindings = <&kp CAPS>;
             key-positions = <3 6>;
         };
+
+        left_window {
+            bindings = <&kp LG(PAGE_DOWN)>;
+            key-positions = <11 12 13>;
+        };
     };
 
     keymap {
