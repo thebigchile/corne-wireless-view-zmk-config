@@ -95,13 +95,6 @@
             layers = <1>;
         };
 
-        tilde {
-            bindings = <&kp TILDE>;
-            key-positions = <25 26>;
-            layers = <0>;
-            timeout-ms = <30>;
-        };
-
         L_Brace {
             bindings = <&kp LEFT_BRACE>;
             key-positions = <23 22>;
