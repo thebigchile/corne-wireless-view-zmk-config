@@ -152,10 +152,10 @@
 
         lower_layer {
             bindings = <
-  &kp PRINTSCREEN  &kp PG_DN  &kp UP      &kp PG_UP    &kp C_VOLUME_UP      &kp N7        &kp N8  &kp N9   &kp MINUS  &kp C_AL_CALCULATOR
-  &kp LC(A)        &kp LEFT   &kp DOWN    &kp RIGHT    &kp C_VOLUME_DOWN    &kp N4        &kp N5  &kp N6   &kp PLUS   &kp STAR
-  &kp K_REDO       &kp K_CUT  &kp K_COPY  &kp K_PASTE  &tap_d_playnext      &kp N1        &kp N2  &kp N3   &kp FSLH   &none
-                              &kp ESC     &none        &lt 1 ESCAPE         &lt 2 DELETE  &kp N0  &kp RET
+  &kp C_AC_PRINT  &kp PG_DN  &kp UP      &kp PG_UP    &kp C_VOLUME_UP      &kp N7        &kp N8  &kp N9   &kp MINUS  &kp C_AL_CALCULATOR
+  &kp LC(A)       &kp LEFT   &kp DOWN    &kp RIGHT    &kp C_VOLUME_DOWN    &kp N4        &kp N5  &kp N6   &kp PLUS   &kp STAR
+  &kp K_REDO      &kp K_CUT  &kp K_COPY  &kp K_PASTE  &tap_d_playnext      &kp N1        &kp N2  &kp N3   &kp FSLH   &none
+                             &kp ESC     &none        &lt 1 ESCAPE         &lt 2 DELETE  &kp N0  &kp RET
             >;
 
             label = "Num";
