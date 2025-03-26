@@ -130,11 +130,6 @@
             bindings = <&kp LG(PAGE_DOWN)>;
             key-positions = <16 17 18>;
         };
-
-        lay_3 {
-            bindings = <&to 3>;
-            key-positions = <32 33>;
-        };
     };
 
     keymap {
