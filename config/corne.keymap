@@ -122,7 +122,7 @@
         };
 
         Lay3 {
-            bindings = <&tog 0>;
+            bindings = <&tog 1>;
             key-positions = <32 33>;
         };
     };
