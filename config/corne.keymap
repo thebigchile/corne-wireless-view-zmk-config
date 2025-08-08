@@ -137,7 +137,7 @@
   &kp Q                 &kp W                 &kp E                     &kp R                   &kp T        &kp Y      &kp U                    &kp I                     &kp O                  &kp P
   &home_row LEFT_GUI A  &home_row LEFT_ALT S  &home_row LEFT_CONTROL D  &home_row LEFT_SHIFT F  &kp G        &kp H      &home_row RIGHT_SHIFT J  &home_row LEFT_CONTROL K  &home_row RIGHT_ALT L  &home_row RIGHT_GUI SEMICOLON
   &kp Z                 &kp X                 &kp C                     &kp V                   &kp B        &kp N      &kp M                    &kp COMMA                 &kp DOT                &kp FSLH
-                                              &kp ESC                   &kp BSPC                &lt 2 TAB    &lt 3 DEL  &kp SPACE                &kp ENTER
+                                              &kp ESC                   &kp BSPC                &lt 4 TAB    &lt 3 DEL  &kp SPACE                &kp ENTER
             >;
         };
 
@@ -161,6 +161,16 @@
             >;
 
             label = "Sym";
+        };
+
+        layer_4 {
+            label = "window_num";
+            bindings = <
+  &kp PRINTSCREEN  &kp PG_DN  &kp UP     &kp PG_UP  &kp C_VOLUME_UP      &kp N7        &kp N8  &kp N9   &kp MINUS  &kp C_AL_CALCULATOR
+  &kp LC(A)        &kp LEFT   &kp DOWN   &kp RIGHT  &kp C_VOLUME_DOWN    &kp N4        &kp N5  &kp N6   &kp PLUS   &kp STAR
+  &kp LC(Z)        &kp LC(X)  &kp LC(C)  &kp LC(V)  &tap_d_playnext      &kp N1        &kp N2  &kp N3   &kp FSLH   &none
+                              &kp ESC    &none      &lt 2 ESCAPE         &lt 3 DELETE  &kp N0  &kp RET
+            >;
         };
     };
 };
